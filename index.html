@@ -11,6 +11,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
 
+  <style>
+    .sora-font{
+      font-family: "Sora", serif;
+    }
+  </style>
+
   <!-- daisyUI cdn-->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
@@ -32,9 +38,9 @@
 
 </head>
 
-<body>
+<body class="sora-font">
   <!-- header section -->
-  <header class="bg-gradient-to-b from-white to-[#EFEBE3] mb-30">
+  <header class="bg-gradient-to-b from-white to-[#EFEBE3] mb-24">
     <!-- navber section -->
     <nav class="md:container md:mx-auto mb-20 mx-5">
       <div class="navbar">
@@ -86,7 +92,38 @@
   </header>
 
   <!-- main section -->
-  <main></main>
+  <main class="container mx-auto">
+
+    <!-- service section -->
+     <section class="mb-24 mx-5">
+      <h3 class="text-4xl text-[#179800] font-semibold mb-10">Service</h3>
+
+      <!-- service section -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-[#EFEBE3] rounded-lg p-8 text-center">
+
+          <!-- 24/7 Services card -->
+          <img class="mx-auto bg-white rounded-full p-4 mb-6" src="./assets/service.png" alt="">
+          <h4 class="text-2xl font-semibold mb-3">24/7 Services</h4>
+          <p class="w-4/5 mx-auto">Get expert support anytime, day or night. We're here 24/7 to assist you whenever you need us!</p>
+        </div>
+
+        <!-- Fast Delivery card -->
+        <div class="bg-[#EFEBE3] rounded-lg p-8 text-center">
+          <img class="mx-auto bg-white rounded-full p-4 mb-6" src="./assets/delivery.png" alt="">
+          <h4 class="text-2xl font-semibold mb-3">Fast Delivery</h4>
+          <p class="w-4/5 mx-auto">Get your order delivered in no time! We guarantee speedy, reliable service to get your items to you fast.</p>
+        </div>
+
+        <!-- Healthy Products card -->
+        <div class="bg-[#EFEBE3] rounded-lg p-8 text-center">
+          <img class="mx-auto bg-white rounded-full p-4 mb-6" src="./assets/healthy.png" alt="">
+          <h4 class="text-2xl font-semibold mb-3">Healthy Products</h4>
+          <p class="w-4/5 mx-auto">Shop our selection of all-natural, healthy products designed to support your well-being every day.</p>
+        </div>
+      </div>
+     </section>
+  </main>
 
   <!-- footer section -->
   <footer></footer>
