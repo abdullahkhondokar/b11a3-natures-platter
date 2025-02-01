@@ -27,7 +27,6 @@
           colors: {
             clifford: '#da373d',
             'main-btn': '#179800',
-            'second-btn': '#ffffff',
           }
         }
       }
@@ -42,50 +41,67 @@
 <body class="sora-font">
   <!-- header section -->
   <header class="bg-gradient-to-b from-white to-[#EFEBE3] mb-16 md:mb-24">
+
     <!-- navber section -->
     <nav class="md:container md:mx-auto mb-20 mx-5">
-      <div class="navbar">
+      <div class="navbar bg-base-100">
+        <!-- navbar start -->
         <div class="navbar-start">
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
-              </svg>
-            </div>
-            <!-- menu items -->
-            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-              <li><a>Product</a></li>
-              <li><a>Services</a></li>
-              <li><a>Contact us</a></li>
-            </ul>
-          </div>
-          <img class="btn btn-ghost text-xl" src="./assets/logo-header.png" alt="">
+          <img class="hidden lg:flex" src="./assets/logo-header.png" alt="">
+          <img class="lg:hidden" src="./assets/logo-sm.png" alt="">
         </div>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1 text-xl">
+        <!-- navbar center -->
+        <div class="navbar-center">
+          <ul class="menu menu-horizontal px-1 hidden lg:flex text-xl">
             <li><a>Product</a></li>
             <li><a>Services</a></li>
             <li><a>Contact us</a></li>
           </ul>
         </div>
-        <!-- buttons -->
-        <div class="navbar-end gap-3">
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <i class="fa-solid fa-cart-shopping"></i>
-          <a class="btn btn-outline border-[#179800] text-black text-xl font-normal">Primary</a>
-          <a class="btn bg-main-btn text-white text-xl font-normal">Register</a>
+        <!-- navbar end -->
+        <div class="navbar-end">
+          <div class="hidden lg:flex gap-3 text-xl">
+            <div class="flex justify-center items-center gap-3">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <a class="btn btn-outline border-[#179800] font-normal text-xl">Login</a>
+            <a class="btn bg-main-btn text-white font-normal text-xl">Register</a>
+          </div>
+
+          <!-- navbar small device -->
+          <div class="dropdown dropdown-end lg:hidden">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+              </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-60 p-2 shadow">
+              <ul class="flex items-center gap-5 mb-1">
+                <li><a href="#"><i class="fa-solid fa-magnifying-glass text-xl"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-cart-shopping text-xl"></i></a></li>
+              </ul>
+              <li><a class="text-xl">Product</a></li>
+              <li><a class="text-xl">Services</a></li>
+              <li><a class="text-xl">Contact us</a></li>
+              <li><a class="btn btn-outline border-[#179800] font-normal text-xl mt-2 mb-5">Login</a></li>
+              <li><a class="btn bg-main-btn text-white font-normal text-xl">Register</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
 
     <!-- banner section -->
     <section class="md:w-2/5 md:mx-auto text-center mx-5">
+
       <!-- text -->
       <h2 class="text-3xl md:text-5xl font-semibold mb-8">Freshness <span class="text-[#179800]">You Can <br>
           Count</span> On, Prices You’ll Love!</h2>
       <p class="mb-8">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got
         you covered every day!</p>
+
       <!-- image -->
       <img class="" src="./assets/hero-vegetables.png" alt="vegetable photo">
     </section>
@@ -339,7 +355,7 @@
 
     <!-- footer -->
     <div class="container mx-auto text-white">
-      <div class="md:flex justify-around items-end px-5 space-y-10">
+      <div class="md:flex justify-around items-end px-5 space-y-12">
         <div>
           <img class="mb-3" src="./assets/logo-footer.png" alt="">
           <p class="text-xl w-3/5">Discover a world of treats, toys, and essentials handpicked for your furry friends
